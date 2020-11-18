@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-18.0" />
+
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="eleven"
+          review="gerrit.pixelexperience.org" />
+
+  <!-- CodeAurora additions -->
+  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="lineage" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineage" />
+  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="lineage" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" revision="lineage-18.0-caf" remote="lineage" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="lineage-18.0-caf" remote="lineage" />
+  <project path="system/qcom" name="android_system_qcom" remote="lineage" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lineage" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="lineage" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="lineage" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="lineage" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="lineage" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-18.0-pn5xx" remote="lineage" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-18.0-pn5xx" remote="lineage" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" revision="lineage-18.0-sn100x" remote="lineage" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" revision="lineage-18.0-sn100x" remote="lineage" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="lineage" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lineage" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="lineage" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineage" />
+
+  <!-- Custom additions -->
+  <project path="prebuilts/tools-custom" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
+
+  <!-- External repos -->
+  <project path="external/bson" name="android_external_bson" remote="lineage" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="lineage" />
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
+  <project path="external/json-c" name="android_external_json-c" remote="lineage" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/broadcom/nfc" name="android_hardware_broadcom_nfc" remote="lineage" />
+
+  <!-- Packages repos -->
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+
+  <!-- System Repos -->
+  <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
+
+  <!-- CodeAurora additions -->
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="pixel" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="pixel" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_msm8996_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996_media" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="pixel" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="hardware_qcom-caf_sdm845_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_sdm845_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom-caf_sdm845_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="pixel" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="pixel" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
+
+  <!-- External repos -->
+  <project path="external/guice" name="external_guice" remote="pixel" />
+  <project path="external/libcxx" name="external_libcxx" remote="pixel" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="pixel" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="pixel" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="pixel" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="pixel" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="pixel" />
+  <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="pixel" />
+  <project path="hardware/ril" name="hardware_ril" remote="pixel" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="pixel" />
+  <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="pixel" />
+  <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="pixel" />
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
+  <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
+  <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixel" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="pixel" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="pixel" clone-depth="1" />
+
+  <!-- System Repos -->
+  <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
+  <project path="system/libufdt" name="system_libufdt" remote="pixel" />
+  <project path="system/netd" name="system_netd" remote="pixel" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="pixel" />
+  <project path="system/update_engine" name="system_update_engine" remote="pixel" />
+
+  <!-- Tools Repos -->
+  <project path="tools/metalava" name="tools_metalava" remote="pixel" />
+
+</manifest>
