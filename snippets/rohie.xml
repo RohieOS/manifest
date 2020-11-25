@@ -37,8 +37,9 @@
   <project path="frameworks/av" name="platform_frameworks_av" remote="rohie" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="rohie" />
 
-  <!-- SePolicy Repos -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="rohie" />
+  <!-- Sepolicy Repos -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="rohie" revision="r" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="rohie" revision="r-legacy-um" />
 
   <project path="development" name="platform_development" remote="rohie" />
 
