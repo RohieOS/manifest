@@ -142,6 +142,8 @@
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="pixel" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixel" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="pixel" />
+  <project path="vendor/support" name="vendor_support" remote="pixel" />
+
 
   <!-- Prebuilts -->
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="pixel" clone-depth="1" />
