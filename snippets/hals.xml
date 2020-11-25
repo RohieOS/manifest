@@ -104,6 +104,9 @@
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="pixel" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
 
+  <!-- bootable repos -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
+
   <!-- External repos -->
   <project path="external/guice" name="external_guice" remote="pixel" />
   <project path="external/libcxx" name="external_libcxx" remote="pixel" />

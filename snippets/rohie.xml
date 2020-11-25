@@ -45,6 +45,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie" />
+  <project path="platform_testing" name="platform_testing" remote="rohie" />
 
   <!-- rohie Repos -->
   <project path="vendor/aosp" name="vendor_aosp" remote="rohie" />
