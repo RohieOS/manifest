@@ -5,9 +5,9 @@
           fetch="https://github.com/RohieOS/"
           revision="refs/heads/r" />
 
-  <remote name="pixel-gitlab"
-          fetch="https://gitlab.com/PixelExperience"
-          revision="eleven" />
+  <remote name="rohie-gitlab"
+          fetch="https://gitlab.com/rohieos"
+          revision="r" />
 
   <project path="bionic" name="platform_bionic" remote="rohie" />
 
@@ -49,7 +49,7 @@
 
   <!-- rohie Repos -->
   <project path="vendor/aosp" name="vendor_aosp" remote="rohie" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="rohie-gitlab" clone-depth="1" />
 
   <!-- manifest Repos -->
   <project path="manifest" name="manifest" remote="rohie" />
