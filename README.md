@@ -1,15 +1,12 @@
-# Rohie OS #
-Meow or Never
+  # Rohie OS #
+--##Meow or   Never##--
 
 # Initialize Source
-repo init -u https://github.com/RohieOS/manifest -b r
+    repo init --depth=1 -u https://github.com/RohieOS/manifest -b r
+    
 
 # Sync
-repo sync -c -j$(nproc --all) --no-clone-bundle --no-tags
-
-### Build ###
-
-bash
+    repo sync -c -j$(nproc --all) --no-clone-bundle --no-tags
 
 # Set up environment
 $ . build/envsetup.sh
