@@ -15,5 +15,5 @@ $ . build/envsetup.sh
 $ lunch aosp_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ m rohie -jX
 
