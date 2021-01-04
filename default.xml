@@ -5,13 +5,13 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-11.0.0_r20"/>
+           revision="refs/tags/android-11.0.0_r28"/>
 
   <!-- Core source -->
   <remote  name="system"
            fetch="https://source.codeaurora.org/quic/la/"
            review="codeaurora.org" />
-  <default revision="refs/tags/LA.UM.9.6.2.r1-02100-89xx.0"
+  <default revision="refs/tags/LA.UM.9.2.r1-01800-SDMxx0.0"
            remote="system"
            sync-c="true"
            sync-f="true" />
@@ -849,7 +849,7 @@
 
   <!-- Add all tracked repos -->
   <include name="snippets/remove.xml" />
-  <!--include name="snippets/aosp.xml" /-->
+  <include name="snippets/aosp.xml" />
   <include name="snippets/rohie.xml" />
   <include name="snippets/lineage.xml" />
 

@@ -112,7 +112,6 @@
   <remove-project name="platform/hardware/qcom/gps" />
 
   <!-- device repos -->
-  <remove-project name="device/qcom/qssi" />
   <remove-project name="device/qcom/sepolicy" />
   <remove-project name="device/qcom/vendor-common" />
 
