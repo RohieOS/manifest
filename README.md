@@ -1,4 +1,4 @@
-![RohieOS](https://raw.githubusercontent.com/RohieOS/manifest/11/Rohie.png)
+![RohieOS](https://i.imgur.com/bgk8Ql0.png[/img])
 
 ---------------------------------------------------------------------------------------
  Getting Started:
