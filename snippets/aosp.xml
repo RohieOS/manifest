@@ -4,6 +4,8 @@
   <!-- Packages (AOSP) -->
   <remove-project name="platform/system/libhidl" />
   <project path="system/libhidl" name="platform/system/libhidl" remote="aosp" />
+  <remove-project name="platform/system/apex" />
+  <project path="system/apex" name="platform/system/apex" remote="aosp" />
 
 </manifest>
 
