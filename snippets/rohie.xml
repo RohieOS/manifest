@@ -104,6 +104,7 @@
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="rohie"/>
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom-opensource_bluetooth-commonsys-intf" remote="rohie"/>
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="rohie"/>
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="rohie"/>
   <project path="vendor/qcom/opensource/recovery-ext" name="vendor_qcom_opensource_recovery-ext" remote="rohie"/>
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="rohie"/>
 
