@@ -35,7 +35,6 @@
 
   <!-- External repos -->
   <remove-project name="platform/external/libcxx" />
-  <remove-project name="platform/external/libgav1" />
   <remove-project name="platform/external/json-c" />
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/arm-optimized-routines" />

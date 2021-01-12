@@ -35,7 +35,6 @@
 
   <!-- external -->
   <project path="external/libcxx" name="external_libcxx" remote="rohie"/>
-  <project path="external/libgav1" name="external_libgav1" remote="rohie" />
   <project path="external/selinux" name="platform_external_selinux" remote="rohie" />
   <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="rohie" />
 
