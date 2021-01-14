@@ -68,6 +68,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie"/>
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="rohie"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie"/>
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie"/>
 
   <!-- Prebuilts -->
   <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="rohie" />
