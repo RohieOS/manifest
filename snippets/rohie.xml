@@ -92,6 +92,7 @@
   <project path="system/libufdt" name="system_libufdt" remote="rohie"/>
   <project path="system/update_engine" name="system_update_engine" remote="rohie"/>
   <project path="system/vold" name="platform_system_vold" remote="rohie"/>
+  <project path="system/security" name="platform_system_security" remote="rohie" />
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="rohie" />

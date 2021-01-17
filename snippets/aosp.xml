@@ -54,8 +54,6 @@
   <project path="system/libhidl" name="platform/system/libhidl" remote="aosp" />
   <remove-project name="platform/system/apex" />
   <project path="system/apex" name="platform/system/apex" remote="aosp" />
-  <remove-project name="platform/system/security" />
-  <project path="system/security" name="platform/system/security" remote="aosp" />
 
   <!-- Prebuilts (AOSP) -->
   <remove-project name="platform/prebuilts/r8" />
