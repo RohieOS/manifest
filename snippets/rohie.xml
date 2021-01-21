@@ -65,9 +65,7 @@
 
   <!-- packages/apps -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="rohie"/>
-  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="rohie"/>
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie"/>
-  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="rohie"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie"/>
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie"/>
 
