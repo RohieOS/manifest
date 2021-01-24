@@ -60,11 +60,9 @@
   <!-- general repos -->
   <project path="device/qcom/common" name="device_qcom_common" remote="rohie"/>
   <project path="external/json-c" name="external_json-c" remote="rohie"/>
-  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="rohie"/>
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="rohie"/>
 
   <!-- packages/apps -->
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="rohie"/>
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie"/>
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie"/>

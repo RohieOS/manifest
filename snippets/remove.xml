@@ -36,7 +36,6 @@
   <!-- External repos -->
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/json-c" />
-  <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/external/iptables" />
   <remove-project name="platform/external/libjpeg-turbo" />
@@ -121,7 +120,6 @@
   <remove-project name="kernel/prebuilts/4.19/arm64" />
 
   <remove-project name="platform/packages/apps/Browser2" />
-  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Camera2" />
   <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Contacts" />
