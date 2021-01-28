@@ -105,6 +105,7 @@
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="rohie"/>
   <project path="vendor/qcom/opensource/recovery-ext" name="vendor_qcom_opensource_recovery-ext" remote="rohie"/>
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="rohie"/>
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="rohie"/>
 
   <project path="external/arm-optimized-routines" name="AOSPA/android_external_arm-optimized-routines" remote="github" revision="ruby" />
   <project path="external/iptables" name="AOSPA/android_external_iptables" remote="github" revision="ruby" />
