@@ -37,7 +37,7 @@
   <project path="external/libcxx" name="external_libcxx" remote="rohie"/>
   <project path="external/selinux" name="platform_external_selinux" remote="rohie" />
   <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="rohie" />
-  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="rohie-gitlab" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="rohie-gitlab" />
 
   <!-- frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="rohie"/>
@@ -65,6 +65,7 @@
   <!-- packages/apps -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie"/>
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="rohie-gitlab" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie"/>
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="rohie" />
 
