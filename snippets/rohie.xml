@@ -69,10 +69,6 @@
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie"/>
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="rohie" />
 
-  <!-- Prebuilts -->
-  <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="rohie" />
-  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="rohie" />
-
   <!-- snapdragon clang -->
   <project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="ruby" clone-depth="1"/>
 
@@ -87,7 +83,6 @@
   <!-- system repos -->
   <project path="system/bt" name="platform_system_bt" remote="rohie"/>
   <project path="system/core" name="system_core" remote="rohie"/>
-  <project path="system/extras" name="platform_system_extras" remote="rohie" />
   <project path="system/libufdt" name="system_libufdt" remote="rohie"/>
   <project path="system/update_engine" name="system_update_engine" remote="rohie"/>
   <project path="system/vold" name="platform_system_vold" remote="rohie"/>
