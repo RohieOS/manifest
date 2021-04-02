@@ -45,6 +45,9 @@
   <remove-project name="platform/frameworks/minikin" />
   <project path="frameworks/minikin" name="platform/frameworks/minikin" remote="aosp" />
 
+  <!-- Hardware (AOSP) -->
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" remote="aosp" />
+
   <!-- Packages (AOSP) -->
   <remove-project name="platform/packages/apps/Car/libs" />
   <project path="packages/apps/Car/libs" name="platform/packages/apps/Car/libs" remote="aosp" />
