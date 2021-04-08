@@ -83,7 +83,6 @@
   <remove-project name="platform/vendor/qcom/titanium_32"/>
   <remove-project name="platform/vendor/qcom/titanium_64"/>
   <remove-project name="platform/vendor/qcom/wlan"/>
-  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/vendor/qcom-opensource/recovery-ext" />
