@@ -21,7 +21,7 @@
   </project>
 
   <project path="build/blueprint" name="platform_build_blueprint" remote="rohie" />
-
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="rohie" />
   <project path="build/soong" name="platform_build_soong" remote="rohie" >
  	   <linkfile src="root.bp" dest="Android.bp" />
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
