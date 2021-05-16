@@ -72,7 +72,7 @@
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="rohie" />
 
   <!-- snapdragon clang -->
-  <project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="ruby" clone-depth="1"/>
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="rohie" clone-depth="1"/>
 
   <!-- sepolicy repos -->
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="rohie"/>
