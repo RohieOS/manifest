@@ -5,7 +5,7 @@
   <remote  name="system"
            fetch="https://source.codeaurora.org/quic/la/"
            review="codeaurora.org" />
-  <default revision="refs/tags/LA.UM.9.2.r1-03000-SDMxx0.0"
+  <default revision="refs/tags/LA.UM.9.2.r1-03200-SDMxx0.0"
            remote="system"
            sync-c="true"
            sync-f="true" />
