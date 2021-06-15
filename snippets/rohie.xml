@@ -38,6 +38,7 @@
   <project path="external/selinux" name="platform_external_selinux" remote="rohie" />
   <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="rohie" />
   <project path="external/faceunlock" name="external_faceunlock" remote="rohie-gitlab" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="rohie" />
   <project path="external/lottie" name="external_lottie" remote="rohie" />
 
   <!-- frameworks -->
