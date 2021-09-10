@@ -5,7 +5,7 @@
   <remote  name="system"
            fetch="https://source.codeaurora.org/quic/la/"
            review="codeaurora.org" />
-  <default revision="refs/tags/LA.UM.9.2.r1-03400-SDMxx0.0"
+  <default revision="refs/tags/LA.UM.9.2.r1-03500-SDMxx0.0"
            remote="system"
            sync-c="true"
            sync-f="true" />
@@ -14,7 +14,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-11.0.0_r39"/>
+           revision="refs/tags/android-11.0.0_r43"/>
 
   <remote  name="github"
            fetch="https://github.com" />
@@ -517,7 +517,6 @@
   <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" />
   <project name="platform/packages/apps/Car/Calendar" path="packages/apps/Car/Calendar" />
   <project name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" />
-  <project name="platform/packages/apps/Car/CompanionDeviceSupport" path="packages/apps/Car/CompanionDeviceSupport" />
   <project name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" />
   <project name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" />
   <project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" />
