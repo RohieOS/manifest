@@ -5,7 +5,7 @@
   <remote  name="system"
            fetch="https://source.codeaurora.org/quic/la/"
            review="codeaurora.org" />
-  <default revision="refs/tags/LA.UM.9.2.r1-03500-SDMxx0.0"
+  <default revision="refs/tags/LA.UM.9.2.1.r1-08000-sdm660.0"
            remote="system"
            sync-c="true"
            sync-f="true" />
@@ -94,7 +94,6 @@
   <project name="platform/external/aac" path="external/aac" />
   <project name="platform/external/adeb" path="external/adeb" />
   <project name="platform/external/adhd" path="external/adhd" />
-  <project name="platform/external/adt-infra" path="external/adt-infra" />
   <project name="platform/external/android-clat" path="external/android-clat" />
   <project name="platform/external/androidplot" path="external/androidplot" />
   <project name="platform/external/angle" path="external/angle" />
