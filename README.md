@@ -1,6 +1,17 @@
 ![RohieOS](https://i.imgur.com/bgk8Ql0.png[/img])
 
+# RohieOS Meow [![Download RohieOS](https://img.shields.io/sourceforge/dt/rohieos.svg)](https://sourceforge.net/projects/rohieos/files/r/)  [![Download RohieOS](https://img.shields.io/sourceforge/dm/rohieos.svg)](https://sourceforge.net/projects/rohieos/files/r/)  
+The Pure AOSP Experience Which Every Users Want With Basic Features.
+Based On CAF, With Meow Icons
+
+### Requirements
+Before start to compiling RohieOS for your own device, some requirements as explained bellow:
+- 16GB RAM (Swap can be helpful)
+- Quadcore Processor
+- 150GB Free Disk Space
+
 ---------------------------------------------------------------------------------------
+
  Getting Started:
  ==============
 
