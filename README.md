@@ -1,4 +1,4 @@
-![RohieOS](https://i.imgur.com/bgk8Ql0.png[/img])
+![RohieOS](https://raw.githubusercontent.com/RohieOS/manifest/11/banner.jpg)
 
 # RohieOS Meow [![Download RohieOS](https://img.shields.io/sourceforge/dt/rohieos.svg)](https://sourceforge.net/projects/rohieos/files/r/)  [![Download RohieOS](https://img.shields.io/sourceforge/dm/rohieos.svg)](https://sourceforge.net/projects/rohieos/files/r/)  
 The Pure AOSP Experience Which Every Users Want With Basic Features.
