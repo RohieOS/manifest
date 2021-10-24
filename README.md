@@ -20,13 +20,13 @@ To get started with manifest/RohieOS, you'll need to get familiar with [Repo](ht
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u https://github.com/RohieOS/manifest.git -b 11
+repo init -u https://github.com/RohieOS/manifest.git -b 12
 
 ```
 You can alternatively use this command to save some space and time :
 
 ```bash
-repo init --depth=1 -u https://github.com/RohieOS/manifest.git -b 11
+repo init --depth=1 -u https://github.com/RohieOS/manifest.git -b 12
 
 ```
 

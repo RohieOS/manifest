@@ -3,11 +3,11 @@
 
   <remote  name="rohie"
            fetch="https://github.com/RohieOS/"
-           revision="11" />
+           revision="12" />
 
   <remote name="rohie-gitlab"
           fetch="https://gitlab.com/RohieOS"
-          revision="11" />
+          revision="12" />
 
   <!-- build -->
   <project path="build/make" name="platform_build_make" remote="rohie" >
@@ -20,100 +20,62 @@
   	   <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/blueprint" name="platform_build_blueprint" remote="rohie" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" remote="rohie" />
   <project path="build/soong" name="platform_build_soong" remote="rohie" >
  	   <linkfile src="root.bp" dest="Android.bp" />
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="art" name="platform_art" remote="rohie" />
-  <project path="platform_testing" name="platform_testing" remote="rohie" />
-
-  <!--bionic-->
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="rohie" />
-
-  <!-- external -->
-  <project path="external/libcxx" name="external_libcxx" remote="rohie"/>
-  <project path="external/selinux" name="platform_external_selinux" remote="rohie" />
   <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="rohie" />
-  <project path="external/faceunlock" name="external_faceunlock" remote="rohie-gitlab" />
-  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="rohie" />
   <project path="external/lottie" name="external_lottie" remote="rohie" />
 
   <!-- frameworks -->
-  <project path="frameworks/av" name="platform_frameworks_av" remote="rohie"/>
   <project path="frameworks/base" name="platform_frameworks_base" remote="rohie"/>
-  <project path="frameworks/native" name="platform_frameworks_native" remote="rohie"/>
-  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="rohie"/>
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="rohie"/>
-  <project path="frameworks/opt/timezonepicker" name="platform_frameworks_opt_timezonepicker" remote="rohie"/>
 
   <!-- hardware -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="rohie"/>
   <project path="hardware/interfaces" name="hardware_interfaces" remote="rohie"/>
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="rohie"/>
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="rohie"/>
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="rohie"/>
-  <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="rohie"/>
-  <project path="hardware/ril" name="hardware_ril" remote="rohie"/>
-  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="rohie" />
-
-  <!-- general repos -->
-  <project path="device/qcom/common" name="device_qcom_common" remote="rohie"/>
-  <project path="external/json-c" name="external_json-c" remote="rohie"/>
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="rohie"/>
 
   <!-- packages/apps -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie"/>
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie"/>
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="rohie-gitlab" />
-  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie"/>
-  <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="rohie" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="rohie" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="rohie" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="rohie" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="rohie" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="rohie" />    
 
   <!-- snapdragon clang -->
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="rohie" clone-depth="1"/>
 
   <!-- sepolicy repos -->
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="rohie"/>
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="rohie-R"/>
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="rohie"/>
-  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="rohie"/>
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="rohie"/>
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="rohie"/>
   <project path="system/sepolicy" name="system_sepolicy" remote="rohie"/>
 
   <!-- system repos -->
-  <project path="system/bt" name="platform_system_bt" remote="rohie"/>
-  <project path="system/core" name="system_core" remote="rohie"/>
-  <project path="system/libufdt" name="system_libufdt" remote="rohie"/>
-  <project path="system/update_engine" name="system_update_engine" remote="rohie"/>
-  <project path="system/vold" name="platform_system_vold" remote="rohie"/>
-  <project path="system/security" name="platform_system_security" remote="rohie" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="system_core" remote="rohie" />
+  <remove-project name="platform/system/tools/hidl" />
+  <project path="system/tools/hidl" name="system_tools_hidl" remote="rohie" /> 
+
+ <!-- libcore -->
+  <remove-project name="platform/libcore" />
+  <project path="libcore" name="platform_libcore" remote="rohie" />
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="rohie" />
-  <project path="vendor/qcom/common" name="vendor_qcom_common" remote="rohie" />
   <project path="vendor/gapps" name="vendor_gapps" remote="rohie-gitlab" />
-  <project path="vendor/support" name="vendor_support" remote="rohie" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="rohie" />
 
   <!-- vendor repos -->
   <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="rohie"/>
-  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom-opensource_bluetooth-commonsys-intf" remote="rohie"/>
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="rohie"/>
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_display-commonsys-intf" remote="rohie"/>
-  <project path="vendor/qcom/opensource/recovery-ext" name="vendor_qcom_opensource_recovery-ext" remote="rohie"/>
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="rohie"/>
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="rohie"/>
-
-  <project path="external/arm-optimized-routines" name="AOSPA/android_external_arm-optimized-routines" remote="github" revision="ruby" />
-  <project path="external/iptables" name="AOSPA/android_external_iptables" remote="github" revision="ruby" />
-  <project path="external/libjpeg-turbo" name="AOSPA/android_external_libjpeg-turbo" remote="github" revision="ruby" />
-  <project path="external/libpng" name="AOSPA/android_external_libpng" remote="github" revision="ruby" />
-  <project path="external/scudo" name="AOSPA/android_external_scudo" remote="github" revision="ruby" />
-  <project path="external/zlib" name="AOSPA/android_external_zlib" remote="github" revision="ruby" />
-
-  <project path="external/exfatprogs" name="AOSPA/android_external_exfatprogs" remote="github" revision="ruby" />
+  <project name="vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="rohie">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
+  </project> 
 
 </manifest>
