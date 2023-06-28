@@ -2,11 +2,11 @@
 <manifest>
 
   <!-- Core source -->
-  <remote  name="system"
-           fetch="https://source.codeaurora.org/quic/la/"
-           review="codeaurora.org" />
+  <remote  name="clo-la"
+           fetch="https://git.codelinaro.org/clo/la"
+           review="codelinaro.org" />
   <default revision="refs/tags/LA.UM.9.2.1.r1-08000-sdm660.0"
-           remote="system"
+           remote="clo-la"
            sync-c="true"
            sync-f="true" />
 
